@@ -94,15 +94,30 @@ header {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   /* ЗАМЕНИТЬ НА ФОН */
   background-color: #212121;
 }
 
+.div-hero {
+  box-sizing: content-box;
+  width: 646px;
+  height: 200px;
+  margin: 200px 477px;
+}
+
 .button-prim.service {
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 10px 32px;
+  margin-top: 46px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  width: 137px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* преимущества, команда, фильтр */
