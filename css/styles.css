@@ -410,6 +410,18 @@ margin-bottom: 28px;
 .fil-but {
   text-align: center;
 }
+.fil-but li {
+  margin-bottom: 30px;
+  font-size: 0px;
+  text-align: left;
+}
+.fil-but h3 {
+margin: 20px 24px 4px;
+}
+.fil-but p {
+margin: 0px 24px 20px;
+}
+
 button {
   font-weight: 500;
   font-size: 16px;
