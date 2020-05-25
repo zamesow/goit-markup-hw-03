@@ -154,6 +154,9 @@ ul {
 }
 
 /*----------------- преимущества, команда, фильтр */
+.section-item {
+  font-size: 0px;
+}
 .section-img,
 .team,
 button {
@@ -188,6 +191,8 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  margin: 0px;
 }
 
 .section-list {
