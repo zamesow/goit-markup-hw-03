@@ -1,6 +1,5 @@
 /* Шрифты index: Raleway - 400, Roboto - 900, 700, 500, 400 */
 /* Шрифты portfolio: Raleway - 400, Roboto - 700, 500, 400 */
-
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -9,18 +8,32 @@
   --secondary-bg-color: #f5f4fa;
 }
 
-/* цвет клиентских лого-иконок #AFB1B8 */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
 
 ul {
   list-style: none;
 }
 
 /* Header */
-header {
+.header {
   letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  width: 1600px;
+  height: 80px;
 }
 
 /* Logo */
@@ -30,50 +43,50 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  box-sizing: content-box;
-  width: 153px;
-  height: 31px;
+}
+.div-logo {
   margin-top: 24px;
+  margin-right: 1232px;
+  margin-bottom: 25px;
   margin-left: 215px;
-  position: absolute;
 }
 
 .div-nav {
-  position: absolute;
   width: 294px;
   height: 48px;
   margin-top: 32px;
   margin-left: 453px;
   outline: 1px solid red;
-  box-sizing: content-box;
   padding-left: 0px;
 }
 
 /* ссылки */
 .nav-list.link {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+}
+
+.div-nav {
+  padding: 0;
+  margin: 32px 853px 0 453px;
 }
 
 .nav-list.link div {
-  display: inline;
-  box-sizing: content-box;
+  display: inline-block;
   padding-left: ;
   outline: 1px solid red;
 }
 
 .studio {
-  width: 49px;
-  margin: ;
+  margin-right: 50px;
 }
 
 .portfolio {
-  width: 77px;
-  margin-left: ;
+  margin-right: ;
 }
 .contacts {
-  width: 68px;
-  margin-left: ;
+  margin-right: 0;
+  margin-left: 45px;
 }
 
 /* цвет адресов в хедере */
@@ -81,6 +94,20 @@ header {
 .section-text {
   color: var(--primary-text-color);
   font-style: normal;
+}
+
+.nav-adr div {
+  display: inline;
+}
+
+.mail {
+  margin: 32px 30px 32px 1052px;
+  width: 161px;
+}
+
+.fone {
+  margin: 32px 215px 31px 30px;
+  width: 142px;
 }
 
 .logo a {
@@ -99,24 +126,28 @@ header {
 }
 
 .div-hero {
-  box-sizing: content-box;
-  width: 646px;
-  height: 200px;
+  display: inline-block;
+  height: 646px;
   margin: 200px 477px;
 }
 
+.hero-title {
+  padding-bottom: ;
+  margin: ;
+}
+
 .button-prim.service {
-  box-sizing: content-box;
   display: inline-block;
   padding: 10px 32px;
-  margin-top: 46px;
+  margin: 150px 223px 0;
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  width: 137px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border-radius: 4px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 

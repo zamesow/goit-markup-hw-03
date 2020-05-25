@@ -8,14 +8,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <nav class="nav">
-        <a class="logo" href="./index.html"><span>Web</span> Studio </a>
+      <div class="div-logo"><a class="logo" href="./index.html"><span>Web</span> Studio </a></div>
         <div class="div-nav">
+      <nav class="nav">
           <ul class="nav-list link">
             <div class="studio">
               <li>
@@ -27,24 +29,26 @@
                 <a href="./portfolio.html">Портфолио</a>
               </li>
             </div>
-
             <div class="contacts">
               <li><a href="">Контакты</a></li>
             </div>
           </ul>
         </div>
-        <address class="nav-adr link">
-          <a href="mailto:info@devstudio.com">info@devstudio.com </a>
-          <a href="tel:+380961111111">+38 096 111 11 11 </a>
-        </address>
       </nav>
+        <address class="nav-adr link">
+          <div class="mail">
+            <img src="./images/mail.svg" alt="mail">
+            <a href="mailto:info@devstudio.com">info@devstudio.com </a>
+          </div>
+            <div class="fone"><img src="./images/fone.svg" alt="phone">
+            <a href="tel:+380961111111">+38 096 111 11 11 </a></div>
+        </address>
     </header>
     <main class="main">
       <!--Герой-->
-      
         <section class="hero">
-          <div class="div-hero"></div>
-          <h1>ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+      <div class="div-hero">
+          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
           <a class="button-prim service" href="">Заказать услугу</a>
         </section>
       </div>
