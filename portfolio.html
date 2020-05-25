@@ -12,38 +12,52 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
-      <nav class="nav">
+    <header class="header">
+      <div class="div-logo">
         <a class="logo" href="./index.html"><span>Web</span> Studio </a>
-        <ul class="nav-list link">
-          <li><a href="./index.html">Студия</a></li>
-          <li><a class="nav current" href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <address class="nav-adr link">
+      </div>
+      <div class="div-nav">
+        <nav class="nav">
+          <ul class="nav-list link">
+            <li>
+              <div class="studio">
+                <a class="nav current" href="./index.html">Студия</a>
+              </div>
+            </li>
+            <li>
+              <div class="portfolio">
+                <a href="./portfolio.html">Портфолио</a>
+              </div>
+            </li>
+            <li>
+              <div class="contacts"><a href="">Контакты</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <address class="nav-adr link">
+        <div class="mail">
+          <img src="./images/mail.svg" alt="mail" />
           <a href="mailto:info@devstudio.com">info@devstudio.com </a>
+        </div>
+        <div class="fone">
+          <img src="./images/fone.svg" alt="phone" />
           <a href="tel:+380961111111">+38 096 111 11 11 </a>
-        </address>
-      </nav>
+        </div>
+      </address>
     </header>
     <main>
       <section>
         <!--Фильтр-->
         <!--Скрытый заголовок Фильтра-->
         <h1 class="filter">Фильтр</h1>
-        <ul class="filter-list">
-          <li class="filter-item"><button type="button">Все</button></li>
-          <li class="filter-item">
-            <button type="button">Веб-сайты</button>
-          </li>
-          <li class="filter-item">
-            <button type="button">Приложения</button>
-          </li>
-          <li class="filter-item"><button type="button">Дизайн</button></li>
-          <li class="filter-item">
-            <button type="button">Маркетинг</button>
-          </li>
-        </ul>
+        <div class="fil-but">
+          <button type="button">Все</button>
+          <button type="button">Веб-сайты</button>
+          <button type="button">Приложения</button>
+          <button type="button">Дизайн</button>
+          <button type="button">Маркетинг</button>
+        </div>
         <ul>
           <li>
             <img
@@ -141,18 +155,18 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer">
+    <footer class="futer">
       <!--Адресс-->
-      <div>
-        <a class="footer logo" href="./index.html"><span>Web</span> Studio </a>
-        <address class="address">
-          г. Киев, пр-т Леси Украинки, 26
-          <a class="adr-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com
-          </a>
-          <a class="adr-link" href="tel:+380961111111">+38 096 111 11 11 </a>
-        </address>
-      </div>
+
+      <a class="footer logo" href="./index.html"><span>Web</span> Studio </a>
+      <address class="address">
+        г. Киев, пр-т Леси Украинки, 26
+        <a class="adr-link" href="mailto:info@devstudio.com"
+          >info@devstudio.com
+        </a>
+        <a class="adr-link" href="tel:+380961111111">+38 096 111 11 11 </a>
+      </address>
+
       <!--Список ссылок-->
       <div>
         <p class="white-title">ПРИСОЕДИНЯЙТЕСЬ</p>
