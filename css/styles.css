@@ -18,6 +18,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+/*----------------------- все ссылки */
+a {
+  text-decoration: none;
+}
 
 body {
   margin: 0px;
@@ -231,7 +235,7 @@ body,
 }
 
 /*------------------ Белые заголовки */
-footer .logo,
+.footer.logo,
 .hero,
 .white-title,
 .address {
@@ -345,8 +349,19 @@ padding: ;
 .six {
   padding: 22px 40.52px 22.56px 41px;
 }
+/* -------------------- Футер */
+.futer {
+  background-color: #2f303a;
+  letter-spacing: 0.03em;
+  padding-top: 48px; padding-left: 214px;
+}
+.footer.logo {
+  font-size: 22px;
+  padding: 0px;
+  margin: 0px;
+}
 
-/*--------------------------- адрес в футере */
+/*-------------------- адрес в футере */
 .address,
 .copy {
   font-weight: 400;
@@ -354,26 +369,30 @@ padding: ;
   line-height: 1.71;
   font-style: normal;
 }
+.address {
+margin-top: 10px;
+margin-bottom: 28px;
+}
 
 .adr-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer {
-  background-color: #2f303a;
-  letter-spacing: 0.03em;
-}
 
-.footer .white-title {
+
+.futer .white-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-/* права */
+/*------------------------------ Copyrights */
 .copy {
   color: rgba(255, 255, 255, 0.4);
+  margin: 18px 645px 21px;
+  width: 310px;
+  text-align: center;
 }
 
 /* button */
@@ -384,10 +403,7 @@ padding: ;
   letter-spacing: 0.06em;
 }
 
-/* все ссылки */
-a {
-  text-decoration: none;
-}
+
 
 /* -------- PORTFOLIO ----------- */
 
