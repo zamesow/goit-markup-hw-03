@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 ul {
@@ -116,9 +116,6 @@ ul {
 
 /* Hero */
 .hero {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   /* ЗАМЕНИТЬ НА ФОН */
@@ -127,19 +124,22 @@ ul {
 
 .div-hero {
   display: inline-block;
-  height: 646px;
+  width: 646px;
   margin: 200px 477px;
 }
 
 .hero-title {
-  padding-bottom: ;
-  margin: ;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  margin: 0px;
 }
 
 .button-prim.service {
   display: inline-block;
   padding: 10px 32px;
-  margin: 150px 223px 0;
+  margin: 46px 222px 0;
   border-radius: 4px;
 
   font-weight: 700;
