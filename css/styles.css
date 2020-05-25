@@ -79,20 +79,11 @@ ul {
 
 .nav-list.link div {
   display: inline-block;
-  padding-left: ;
   outline: 1px solid red;
 }
 
 .studio {
   margin-right: 50px;
-}
-
-.portfolio {
-  margin-right: ;
-}
-.contacts {
-  margin-right: 0;
-  margin-left: 45px;
 }
 
 /* цвет адресов в хедере */
@@ -261,10 +252,11 @@ body,
 .section-work {
   margin: 94px 215px;
 }
-.section-work ul, .team-div-child ul {
+.section-work ul,
+.team-div-child ul {
   margin: 0px;
   padding: 0px;
-display: inline-block;
+  display: inline-block;
 }
 
 .section-title {
@@ -274,8 +266,9 @@ display: inline-block;
   text-align: center;
   margin-bottom: 50px;
 }
-  
-.work-li, .team-li {
+
+.work-li,
+.team-li {
   padding: 0px;
   margin: 0px;
   font-size: 0px;
@@ -285,14 +278,13 @@ display: inline-block;
   border-radius: 4px;
 }
 
-  /*----------------- Черные заголовки */
-  .nav-list a,
-  .section-title,
-  .subtitle,
-  .name,
-  button {
-    color: var(--title-text-color);
-  }
+/*----------------- Черные заголовки */
+.nav-list a,
+.section-title,
+.subtitle,
+.name,
+button {
+  color: var(--title-text-color);
 }
 
 /*---------------------------------------- Team */
@@ -324,7 +316,6 @@ display: inline-block;
   padding: 94px 215px;
 }
 .client-img {
-padding: ;
   border: 1px solid var(--icons-grey-color);
   border-radius: 4px;
   width: 170px;
@@ -352,7 +343,8 @@ padding: ;
 .futer {
   background-color: #2f303a;
   letter-spacing: 0.03em;
-  padding-top: 48px; padding-left: 214px;
+  padding-top: 48px;
+  padding-left: 214px;
 }
 .footer.logo {
   font-size: 22px;
@@ -369,15 +361,13 @@ padding: ;
   font-style: normal;
 }
 .address {
-margin-top: 10px;
-margin-bottom: 28px;
+  margin-top: 10px;
+  margin-bottom: 28px;
 }
 
 .adr-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .futer .white-title {
   font-weight: 700;
@@ -402,8 +392,6 @@ margin-bottom: 28px;
   letter-spacing: 0.06em;
 }
 
-
-
 /* -------- PORTFOLIO ----------- */
 
 /* Filter */
@@ -416,10 +404,10 @@ margin-bottom: 28px;
   text-align: left;
 }
 .fil-but h3 {
-margin: 20px 24px 4px;
+  margin: 20px 24px 4px;
 }
 .fil-but p {
-margin: 0px 24px 20px;
+  margin: 0px 24px 20px;
 }
 
 button {
@@ -437,7 +425,8 @@ button {
 button:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* filter-buttons */
