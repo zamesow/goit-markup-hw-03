@@ -13,53 +13,34 @@
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <div class="div-logo">
-        <a class="logo" href="./index.html"><span>Web</span> Studio </a>
+      <a class="logo" href="./index.html"><span>Web</span> Studio </a>
+      <nav class="nav">
+        <a class="studia current" href="./index.html">Студия</a>
+        <a class="portfolio" href="./portfolio.html">Портфолио</a>
+        <a href="">Контакты</a>
+      </nav>
+      <div class="mail-div">
+        <img class="mail-img" src="./images/mail.svg" alt="mail" />
+        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </div>
-      <div class="div-nav">
-        <nav class="nav">
-          <ul class="nav-list link">
-            <li>
-              <div class="studio">
-                <a class="nav current" href="./index.html">Студия</a>
-              </div>
-            </li>
-            <li>
-              <div class="portfolio">
-                <a href="./portfolio.html">Портфолио</a>
-              </div>
-            </li>
-            <li>
-              <div class="contacts"><a href="">Контакты</a></div>
-            </li>
-          </ul>
-        </nav>
+      <div class="fone-div">
+        <img src="./images/fone.svg" alt="phone" />
+        <a class="fone" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
-      <address class="nav-adr link">
-        <div class="mail">
-          <img src="./images/mail.svg" alt="mail" />
-          <a href="mailto:info@devstudio.com">info@devstudio.com </a>
-        </div>
-        <div class="fone">
-          <img src="./images/fone.svg" alt="phone" />
-          <a href="tel:+380961111111">+38 096 111 11 11 </a>
-        </div>
-      </address>
     </header>
     <main>
-      <section>
+      <section class="filter">
         <!--Фильтр-->
         <!--Скрытый заголовок Фильтра-->
-        <h1 class="filter">Фильтр</h1>
+        <h1 class="filter-title">Фильтр</h1>
         <div class="fil-but">
           <button type="button">Все</button>
           <button type="button">Веб-сайты</button>
           <button type="button">Приложения</button>
           <button type="button">Дизайн</button>
           <button type="button">Маркетинг</button>
-
           <ul>
-            <li>
+            <li class="fil-but-li">
               <img
                 src="./images/img-1.jpg"
                 alt="Технокряк"

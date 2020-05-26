@@ -38,8 +38,7 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  width: 1600px;
-  height: 80px;
+  padding: 24px 215px 25px;
 }
 
 /* Logo */
@@ -50,65 +49,40 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 }
-.div-logo {
-  margin-top: 24px;
-  margin-right: 1232px;
-  margin-bottom: 25px;
-  margin-left: 215px;
-}
 
-.div-nav {
+/*----------------------- ссылки навигации*/
+.nav {
   width: 294px;
-  height: 48px;
-  margin-top: 32px;
-  margin-left: 453px;
+  padding: 0px 0px 32px;
+  margin: 7px 305px 0px 85px;
   outline: 1px solid red;
-  padding-left: 0px;
+  text-align: center;
 }
-
-/* ссылки */
-.nav-list.link {
-  padding: 0;
-  margin: 0;
-}
-
-.div-nav {
-  padding: 0;
-  margin: 32px 853px 0 453px;
-}
-
-.nav-list.link div {
-  display: inline-block;
-  outline: 1px solid red;
-}
-
 .studio {
-  margin-right: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+.portfolio {
+  text-align: center;
 }
 
 /* цвет адресов в хедере */
-.nav-adr a,
-.section-text {
+/* .nav-adr.link {
+  display: inline-block;
+} */
+.mail,
+.fone {
   color: var(--primary-text-color);
-  font-style: normal;
-}
-
-.nav-adr div {
-  display: inline;
 }
 
 .mail {
-  margin: 32px 30px 32px 1052px;
+  margin: 32px 30px 32px 0px;
   width: 161px;
 }
 
 .fone {
-  margin: 32px 215px 31px 30px;
+  margin: 32px 0px 31px 0px;
   width: 142px;
-}
-
-.logo a {
-  display: inline;
 }
 
 /*------------------------------- Hero */
@@ -187,6 +161,7 @@ button {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  color: var(--primary-text-color);
 
   margin: 0px;
 }
@@ -200,18 +175,23 @@ button {
 }
 
 /*------------------- всё, что с цветом акцента */
-.nav.current,
+.current,
 .logo span,
-.link a:hover,
-.link a:focus,
+.nav a:hover,
+.nav a:focus,
 .adr-link:focus,
 .section-img:focus,
 .soc-link:hover,
 .soc-link:focus,
 .clients a:hover,
 .clients a:focus,
+.mail:hover,
+.mail:focus,
+.fone:hover,
+.fone:focus,
 button:focus,
-.folow:not(:hover) {
+.follow:not(:hover),
+.fil-but > li:focus {
   color: var(--accent-color);
 }
 
@@ -279,7 +259,7 @@ body,
 }
 
 /*----------------- Черные заголовки */
-.nav-list a,
+.nav a,
 .section-title,
 .subtitle,
 .name,
@@ -386,7 +366,7 @@ button {
 
 /* button */
 .button-prim,
-.button-sec .folow {
+.button-sec .follow {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
@@ -395,6 +375,10 @@ button {
 /* -------- PORTFOLIO ----------- */
 
 /* Filter */
+.filter {
+  padding: 93px 215px 94px;
+}
+
 .fil-but {
   text-align: center;
 }
@@ -403,11 +387,9 @@ button {
   font-size: 0px;
   text-align: left;
 }
-.fil-but h3 {
-  margin: 20px 24px 4px;
-}
-.fil-but p {
-  margin: 0px 24px 20px;
+
+.fil-but-li:hover {
+  /* Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов. */
 }
 
 button {
@@ -436,6 +418,7 @@ button:hover {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin: 20px 24px 4px;
 }
 
 .section-text-item {
@@ -443,4 +426,5 @@ button:hover {
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
+  margin: 0px 24px 20px;
 }
