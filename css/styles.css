@@ -38,57 +38,46 @@ ul {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding: 24px 215px 25px;
 
   display: flex;
 }
 
 /* Logo */
-.logo-div {
-  width: 153px;
-}
-.logo {
+.logo,
+.footer-logo {
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  margin: 24px 85px 25px 215px;
 }
 
 /*----------------------- ссылки навигации*/
-.nav {
-  width: 294px;
-  padding: 0px 0px 32px;
-  margin: 7px 305px 0px 85px;
-
+.nav-ul {
   display: flex;
-  justify-content: space-between;
+  padding-left: 0px;
+  margin-top: 32px;
+  margin-right: 305px;
 }
-.studio {
-  padding: 0px;
-  margin: 0px;
-}
-.portfolio {
-  text-align: center;
+.nav-li:not(:last-child) {
+  margin-right: 50px;
 }
 
-/* цвет адресов в хедере */
-/* .nav-adr.link {
-  display: inline-block;
-} */
+address {
+  display: flex;
+  align-items: center;
+}
 .mail,
 .fone {
   color: var(--primary-text-color);
+  text-decoration: normal;
+  margin-left: 10px;
+  font-style: normal;
 }
-
 .mail {
-  margin: 8px 30px 7px 10px;
-  width: 161px;
-}
-
-.fone {
-  margin: ;
-  width: 142px;
+  margin-right: 30px;
 }
 
 /*------------------------------- Hero */
@@ -186,7 +175,7 @@ button {
 
 /*------------------- всё, что с цветом акцента */
 .current,
-.logo span,
+span,
 .nav a:hover,
 .nav a:focus,
 .adr-link:focus,
@@ -215,18 +204,41 @@ body,
 }
 
 /*------------------ Белые заголовки */
-.footer.logo,
+.footer-logo,
 .hero,
 .white-title,
 .address {
   color: var(--primary-white-color);
 }
 
-/*---------------------------- Чем мы занимаемся? */
-.section.work {
-  padding: 94px 215px;
+/*------------------------ Чем мы занимаемся? */
+.section-work {
+  justify-content: center;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  display: flex;
+  text-align: center;
 }
-.work .white-title {
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
+.work-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-li img {
+  border-radius: 4px;
+}
+
+.white-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -239,44 +251,6 @@ body,
   background-color: rgba(47, 48, 58, 0.8);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  width: 370px;
-}
-
-.section-work {
-  margin-bottom: 94px;
-  width: 1170px;
-  display: flex;
-}
-.section-work > ul {
-  padding-left: 0px;
-  margin-top: 0px;
-}
-
-.team-div-child ul {
-  margin: 0px;
-  padding: 0px;
-  display: inline-block;
-  padding-inline-start: 0px;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-
-.work-li,
-.team-li {
-  padding-left: 0px;
-  margin-right: 30px;
-  font-size: 0px;
-}
-
-.work-li img {
-  border-radius: 4px;
 }
 
 /*----------------- Черные заголовки */
@@ -290,10 +264,20 @@ button {
 
 /*------------------------------------ Team */
 .team {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-bottom: 94px;
 }
-.name {
+.team-ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding-left: 0px;
+}
+.team-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team.name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
@@ -303,6 +287,7 @@ button {
   font-weight: 400;
   color: var(--primary-text-color);
   margin-bottom: 16px;
+  text-align: center;
 }
 .team-card-div {
   width: 270px;
@@ -311,14 +296,32 @@ button {
   display: inline-block;
 }
 
-/* -------------------------- Клиенты */
-.clients {
-  padding: 94px 215px;
+.social-links {
+  display: flex;
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
+
+.soc-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* -------------------------- Клиенты */
 .client-img {
   border: 1px solid var(--icons-grey-color);
   border-radius: 4px;
   width: 170px;
+  height: 90px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+  padding-left: 0px;
+}
+
+.clients-list > li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .one {
@@ -343,38 +346,77 @@ button {
 .futer {
   background-color: #2f303a;
   letter-spacing: 0.03em;
-  padding-top: 48px;
-  padding-left: 214px;
-  padding-right: 216px;
+
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
 }
-.footer.logo {
+.footer-logo {
   font-size: 22px;
-  padding: 0px;
-  margin: 0px;
+  margin: 0px 0px 10px 0px;
+  display: block;
+  padding-bottom: 0px;
 }
 
 /*-------------------- адрес в футере */
+.div-adr {
+  margin: 48px 0px 28px 214px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-right: 69px;
+  width: 231px;
+}
+
 .address,
 .copy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  display: inline-block;
 }
 .address {
-  margin-top: 10px;
   margin-bottom: 28px;
 }
 
 .adr-link {
   color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
-.futer .white-title {
+.white-title.soc {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: left;
+  padding: 0px;
+  margin-bottom: 21;
+}
+
+.div-soc-link {
+  margin: 56px 94px 56px 0px;
+  padding: 0px;
+}
+.social-links.soc {
+  margin-top: 21px;
+  width: 206px;
+}
+
+/* --------------------------- Рассылка */
+.fly {
+  width: 570px;
+  margin: 56px 216px 50px 0px;
+  width: 570px;
+  padding: 0px;
+}
+
+.fly p {
+  margin-top: 0px;
+  margin-bottom: 21px;
+  text-align: left;
 }
 
 /*------------------------------ Copyrights */
@@ -385,7 +427,7 @@ button {
   text-align: center;
 }
 
-/* button */
+/* ------------------------------ buttons */
 .button-prim,
 .button-sec .follow {
   color: var(--primary-white-color);
@@ -448,4 +490,21 @@ button:hover {
   line-height: 1.88;
   color: var(--primary-text-color);
   margin: 0px 24px 20px;
+}
+
+.filter-ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.filter-ul li:not(.only) {
+  margin-right: 30px;
+}
+.div-li {
+  border: 1px solid #eeeeee;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }

@@ -15,18 +15,22 @@
     <header class="header">
       <a class="logo" href="./index.html"><span>Web</span> Studio </a>
       <nav class="nav">
-        <a class="studia current" href="./index.html">Студия</a>
-        <a class="portfolio" href="./portfolio.html">Портфолио</a>
-        <a href="">Контакты</a>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a class="studia" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-li">
+            <a class="portfolio current" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-li"><a href="">Контакты</a></li>
+        </ul>
       </nav>
-      <div class="mail-div">
-        <img class="mail-img" src="./images/mail.svg" alt="mail" />
+      <address>
+        <img class="img" src="./images/mail.svg" alt="mail" />
         <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </div>
-      <div class="fone-div">
-        <img src="./images/fone.svg" alt="phone" />
+        <img class="img" src="./images/fone.svg" alt="phone" />
         <a class="fone" href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
+      </address>
     </header>
     <main>
       <section class="filter">
@@ -39,7 +43,7 @@
           <button type="button">Приложения</button>
           <button type="button">Дизайн</button>
           <button type="button">Маркетинг</button>
-          <ul>
+          <ul class="filter-ul">
             <li class="fil-but-li">
               <img
                 src="./images/img-1.jpg"
@@ -47,8 +51,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Технокряк</h3>
-              <p class="section-text-item">Веб-сайт</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Технокряк</h3>
+                <p class="section-text-item">Веб-сайт</p>
+              </div>
             </li>
             <li>
               <img
@@ -57,20 +63,24 @@
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">
-                Постер New Orlean vs Golden Star
-              </h3>
-              <p class="section-text-item">Дизайн</p>
+              <div class="div-li">
+                <h3 class="section-title-item">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="section-text-item">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="only">
               <img
                 src="./images/img-3.jpg"
                 alt="Ресторан"
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Ресторан Seafood</h3>
-              <p class="section-text-item">Дизайн</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Ресторан Seafood</h3>
+                <p class="section-text-item">Дизайн</p>
+              </div>
             </li>
             <li>
               <img
@@ -79,8 +89,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Проект Prime</h3>
-              <p class="section-text-item">Маркетинг</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Проект Prime</h3>
+                <p class="section-text-item">Маркетинг</p>
+              </div>
             </li>
             <li>
               <img
@@ -89,18 +101,22 @@
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Проект Boxes</h3>
-              <p class="section-text-item">Дизайн</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Проект Boxes</h3>
+                <p class="section-text-item">Дизайн</p>
+              </div>
             </li>
-            <li>
+            <li class="only">
               <img
                 src="./images/design.jpg"
                 alt="Монитор"
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Inspiration has no Borders</h3>
-              <p class="section-text-item">Веб-сайт</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Inspiration has no Borders</h3>
+                <p class="section-text-item">Веб-сайт</p>
+              </div>
             </li>
             <li>
               <img
@@ -109,8 +125,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Издание Limited Edition</h3>
-              <p class="section-text-item">Дизайн</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Издание Limited Edition</h3>
+                <p class="section-text-item">Дизайн</p>
+              </div>
             </li>
             <li>
               <img
@@ -119,18 +137,22 @@
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Проект LAB</h3>
-              <p class="section-text-item">Маркетинг</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Проект LAB</h3>
+                <p class="section-text-item">Маркетинг</p>
+              </div>
             </li>
-            <li>
+            <li class="only">
               <img
                 src="./images/desktop.jpg"
                 alt="Ноутбук"
                 width="370"
                 height="294"
               />
-              <h3 class="section-title-item">Growing Business</h3>
-              <p class="section-text-item">Дизайн</p>
+              <div class="div-li">
+                <h3 class="section-title-item">Growing Business</h3>
+                <p class="section-text-item">Дизайн</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -140,19 +162,20 @@
     <footer class="futer">
       <!--Адресс-->
 
-      <a class="footer logo" href="./index.html"><span>Web</span> Studio </a>
-      <address class="address">
-        г. Киев, пр-т Леси Украинки, 26
-        <a class="adr-link" href="mailto:info@devstudio.com"
-          >info@devstudio.com
-        </a>
-        <a class="adr-link" href="tel:+380961111111">+38 096 111 11 11 </a>
-      </address>
-
+      <div class="div-adr">
+        <a class="footer-logo" href="./index.html"><span>Web</span> Studio </a>
+        <address class="address">
+          г. Киев, пр-т Леси Украинки, 26<br />
+          <a class="adr-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com </a
+          ><br />
+          <a class="adr-link" href="tel:+380961111111">+38 096 111 11 11 </a>
+        </address>
+      </div>
       <!--Список ссылок-->
-      <div>
-        <p class="white-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-        <ul class="social-links">
+      <div class="div-soc-link">
+        <p class="white-title soc">ПРИСОЕДИНЯЙТЕСЬ</p>
+        <ul class="social-links soc">
           <li class="soc-link">
             <a href="" aria-label="Ссылка на Facebook"></a>Instagram
           </li>
@@ -168,10 +191,10 @@
         </ul>
       </div>
       <!--Подписка-->
-      <div class="white-title">
+      <div class="white-title fly">
         <p>Подпишитесь на рассылку</p>
         <p class="adr-link">E-mail</p>
-        <!-- <button type="button" class="folow">
+        <!-- <button type="button" class="follow">
           Подписаться<a class="button-sec" href=""
             ><img src="./images/icon-send.svg" alt="Иконка"
           /></a>

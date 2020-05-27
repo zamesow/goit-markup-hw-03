@@ -17,20 +17,24 @@
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <div class="logo-div">
-        <a class="logo" href="./index.html"><span>Web</span> Studio </a>
-      </div>
+      <a class="logo" href="./index.html"><span>Web</span> Studio </a>
       <nav class="nav">
-        <a class="studia current" href="./index.html">Студия</a>
-        <a class="portfolio" href="./portfolio.html">Портфолио</a>
-        <a href="">Контакты</a>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a class="studia current" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-li">
+            <a class="portfolio" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-li"><a href="">Контакты</a></li>
+        </ul>
       </nav>
-      <div>
-        <img class="mail-img" src="./images/mail.svg" alt="mail" />
+      <address>
+        <img class="img" src="./images/mail.svg" alt="mail" />
         <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </div>
-      <img src="./images/fone.svg" alt="phone" />
-      <a class="fone" href="tel:+380961111111">+38 096 111 11 11</a>
+        <img class="img" src="./images/fone.svg" alt="phone" />
+        <a class="fone" href="tel:+380961111111">+38 096 111 11 11</a>
+      </address>
     </header>
     <main class="main">
       <!--Герой-->
@@ -99,139 +103,129 @@
       </section>
       <!--Чем мы занимаемся?-->
       <section class="section work">
-        <div>
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul>
-            <div class="section-work">
-              <li class="work-li">
-                <img src="./images/desktop.jpg" width="370" alt="Ноутбук" />
-                <h3 class="white-title">Десктопные приложения</h3>
-              </li>
-              <li class="work-li center">
-                <img src="./images/mobile.jpg" width="370" alt="Смартфон" />
-                <h3 class="white-title">Мобильные приложения</h3>
-              </li>
-              <li class="work-li">
-                <img src="./images/design.jpg" width="370" alt="Дизайн" />
-                <h3 class="white-title">Дизайнерские решения</h3>
-              </li>
-            </div>
-          </ul>
-        </div>
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="section-work">
+          <li class="work-li">
+            <img src="./images/desktop.jpg" width="370" alt="Ноутбук" />
+            <h3 class="white-title">Десктопные приложения</h3>
+          </li>
+          <li class="work-li center">
+            <img src="./images/mobile.jpg" width="370" alt="Смартфон" />
+            <h3 class="white-title">Мобильные приложения</h3>
+          </li>
+          <li class="work-li">
+            <img src="./images/design.jpg" width="370" alt="Дизайн" />
+            <h3 class="white-title">Дизайнерские решения</h3>
+          </li>
+        </ul>
       </section>
       <!--Команда-->
       <section class="team">
-        <div class="team-div">
-          <h2 class="section-title team">Наша команда</h2>
-          <div class="team-div-child">
-            <ul class="team-div-ul">
-              <li class="team-li">
-                <div class="team-card-div">
-                  <img
-                    src="./images/john.jpg"
-                    width="270"
-                    alt="Фото Джона Смитта"
-                  />
-                  <h3 class="team name">John Smith</h3>
-                  <p class="section-text name">Product Designer</p>
-                  <ul class="social-links">
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Instagram
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Twitter"></a>Twitter
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Facebook
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="team-li">
-                <div class="team-card-div">
-                  <img
-                    src="./images/marta.jpg"
-                    width="270"
-                    alt="Фото Марты Стюарт"
-                  />
-                  <h3 class="team name">Marta Stewart</h3>
-                  <p class="section-text name">Frontend Developer</p>
-                  <ul class="social-links">
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Instagram
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Twitter"></a>Twitter
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Facebook
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="team-li">
-                <div class="team-card-div">
-                  <img
-                    src="./images/robert.jpg"
-                    width="270"
-                    alt="Фото Роберта Джекиса"
-                  />
-                  <h3 class="team name">Robert Jakis</h3>
-                  <p class="section-text name">Marketing</p>
-                  <ul class="social-links">
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Instagram
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Twitter"></a>Twitter
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Facebook
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="team-li">
-                <div class="team-card-div">
-                  <img
-                    src="./images/martin.jpg"
-                    width="270"
-                    alt="Фото Мартина Доэ"
-                  />
-                  <h3 class="team name">Martin Doe</h3>
-                  <p class="section-text name">UI Designer</p>
-                  <ul class="social-links">
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Instagram
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Twitter"></a>Twitter
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на Facebook"></a>Facebook
-                    </li>
-                    <li class="soc-link">
-                      <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="team-ul">
+          <li class="team-li">
+              <img
+                src="./images/john.jpg"
+                width="270"
+                alt="Фото Джона Смитта"
+              />
+              <h3 class="team name">John Smith</h3>
+              <p class="section-text name">Product Designer</p>
+              <ul class="social-links">
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Instagram
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Twitter"></a>Twitter
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Facebook
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team-li">
+              <img
+                src="./images/marta.jpg"
+                width="270"
+                alt="Фото Марты Стюарт"
+              />
+              <h3 class="team name">Marta Stewart</h3>
+              <p class="section-text name">Frontend Developer</p>
+              <ul class="social-links">
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Instagram
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Twitter"></a>Twitter
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Facebook
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
+                </li>
+              </ul>
+
+          </li>
+          <li class="team-li">
+
+              <img
+                src="./images/robert.jpg"
+                width="270"
+                alt="Фото Роберта Джекиса"
+              />
+              <h3 class="team name">Robert Jakis</h3>
+              <p class="section-text name">Marketing</p>
+              <ul class="social-links">
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Instagram
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Twitter"></a>Twitter
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Facebook
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
+                </li>
+              </ul>
+
+          </li>
+          <li class="team-li">
+
+              <img
+                src="./images/martin.jpg"
+                width="270"
+                alt="Фото Мартина Доэ"
+              />
+              <h3 class="team name">Martin Doe</h3>
+              <p class="section-text name">UI Designer</p>
+              <ul class="social-links">
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Instagram
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Twitter"></a>Twitter
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на Facebook"></a>Facebook
+                </li>
+                <li class="soc-link">
+                  <a href="" aria-label="Ссылка на LinkedIn"></a>LinkedIn
+                </li>
+              </ul>
+
+          </li>
+        </ul>
       </section>
       <!--Клиенты-->
       <section class="clients">
-        <div>
+
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients-list">
             <li>
@@ -242,7 +236,7 @@
                   alt="Лого-1"
               /></a>
             </li>
-            <li>
+            <li >
               <a href=""
                 ><img
                   class="client-img two"
@@ -250,7 +244,7 @@
                   alt="Лого-2"
               /></a>
             </li>
-            <li>
+            <li >
               <a href=""
                 ><img
                   class="client-img three"
@@ -258,7 +252,7 @@
                   alt="Лого-3"
               /></a>
             </li>
-            <li>
+            <li >
               <a href=""
                 ><img
                   class="client-img four"
@@ -266,7 +260,7 @@
                   alt="Лого-4"
               /></a>
             </li>
-            <li>
+            <li >
               <a href=""
                 ><img
                   class="client-img five"
@@ -274,7 +268,7 @@
                   alt="Лого-5"
               /></a>
             </li>
-            <li>
+            <li >
               <a href=""
                 ><img
                   class="client-img six"
@@ -283,26 +277,26 @@
               /></a>
             </li>
           </ul>
-        </div>
       </section>
     </main>
     <!--Подвал-->
     <footer class="futer">
       <!--Адресс-->
-
-      <a class="footer logo" href="./index.html"><span>Web</span> Studio </a>
+      
+<div class="div-adr">
+      <a class="footer-logo" href="./index.html"><span>Web</span> Studio </a>
       <address class="address">
-        г. Киев, пр-т Леси Украинки, 26
+        г. Киев, пр-т Леси Украинки, 26<br>
         <a class="adr-link" href="mailto:info@devstudio.com"
           >info@devstudio.com
-        </a>
+        </a><br>
         <a class="adr-link" href="tel:+380961111111">+38 096 111 11 11 </a>
       </address>
-
+</div>
       <!--Список ссылок-->
-      <div>
-        <p class="white-title">ПРИСОЕДИНЯЙТЕСЬ</p>
-        <ul class="social-links">
+      <div class="div-soc-link">
+        <p class="white-title soc">ПРИСОЕДИНЯЙТЕСЬ</p>
+        <ul class="social-links soc">
           <li class="soc-link">
             <a href="" aria-label="Ссылка на Facebook"></a>Instagram
           </li>
@@ -318,7 +312,7 @@
         </ul>
       </div>
       <!--Подписка-->
-      <div class="white-title">
+      <div class="white-title fly">
         <p>Подпишитесь на рассылку</p>
         <p class="adr-link">E-mail</p>
         <!-- <button type="button" class="follow">
