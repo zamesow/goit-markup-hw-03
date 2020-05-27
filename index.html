@@ -8,7 +8,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
@@ -18,20 +17,20 @@
   <body>
     <!--Шапка сайта-->
     <header class="header">
-      <a class="logo" href="./index.html"><span>Web</span> Studio </a>
+      <div class="logo-div">
+        <a class="logo" href="./index.html"><span>Web</span> Studio </a>
+      </div>
       <nav class="nav">
         <a class="studia current" href="./index.html">Студия</a>
         <a class="portfolio" href="./portfolio.html">Портфолио</a>
         <a href="">Контакты</a>
       </nav>
-      <div class="mail-div">
+      <div>
         <img class="mail-img" src="./images/mail.svg" alt="mail" />
         <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </div>
-      <div class="fone-div">
-        <img src="./images/fone.svg" alt="phone" />
-        <a class="fone" href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
+      <img src="./images/fone.svg" alt="phone" />
+      <a class="fone" href="tel:+380961111111">+38 096 111 11 11</a>
     </header>
     <main class="main">
       <!--Герой-->
@@ -50,52 +49,49 @@
         <div class="section-list">
           <ul class="section-list-ul">
             <li class="section-item">
-              <a class="section-icon" href=""
-                ><img
-                  class="section-img"
-                  src="./images/antenna.svg"
-                  alt="Антенна"
-              /></a>
+              <img
+                class="section-img"
+                src="./images/antenna.svg"
+                alt="Антенна"
+              />
               <h3 class="subtitle">Внимание к деталям</h3>
               <p class="section-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Идейные соображения, а также<br />
+                начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="section-item">
-              <a href=""
-                ><img class="section-img" src="./images/clock.svg" alt="Часы"
-              /></a>
+              <img class="section-img" src="./images/clock.svg" alt="Часы" />
               <h3 class="subtitle">Пунктуальность</h3>
               <p class="section-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                Задача организации, в особенности<br />
+                же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="section-item">
-              <a href=""
-                ><img
-                  class="section-img"
-                  src="./images/diagram.svg"
-                  alt="Диаграмма"
-              /></a>
+              <img
+                class="section-img"
+                src="./images/diagram.svg"
+                alt="Диаграмма"
+              />
               <h3 class="subtitle">Планирование</h3>
               <p class="section-text">
-                Равным образом консультация с широким активом в значительной
+                Равным образом консультация с<br />
+                широким активом в значительной<br />
                 степени обуславливает.
               </p>
             </li>
             <li class="section-item">
-              <a href=""
-                ><img
-                  class="section-img"
-                  src="./images/astronaut.svg"
-                  alt="Астронавт"
-              /></a>
+              <img
+                class="section-img"
+                src="./images/astronaut.svg"
+                alt="Астронавт"
+              />
               <h3 class="subtitle">Современные технологии</h3>
               <p class="section-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                Значимость этих проблем настолько<br />
+                очевидна, что реализация плановых<br />
+                заданий.
               </p>
             </li>
           </ul>
@@ -103,21 +99,23 @@
       </section>
       <!--Чем мы занимаемся?-->
       <section class="section work">
-        <div class="section-work">
+        <div>
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul>
-            <li class="work-li">
-              <img src="./images/desktop.jpg" width="370" alt="Ноутбук" />
-              <h3 class="white-title">Десктопные приложения</h3>
-            </li>
-            <li class="work-li center">
-              <img src="./images/mobile.jpg" width="370" alt="Смартфон" />
-              <h3 class="white-title">Мобильные приложения</h3>
-            </li>
-            <li class="work-li">
-              <img src="./images/design.jpg" width="370" alt="Дизайн" />
-              <h3 class="white-title">Дизайнерские решения</h3>
-            </li>
+            <div class="section-work">
+              <li class="work-li">
+                <img src="./images/desktop.jpg" width="370" alt="Ноутбук" />
+                <h3 class="white-title">Десктопные приложения</h3>
+              </li>
+              <li class="work-li center">
+                <img src="./images/mobile.jpg" width="370" alt="Смартфон" />
+                <h3 class="white-title">Мобильные приложения</h3>
+              </li>
+              <li class="work-li">
+                <img src="./images/design.jpg" width="370" alt="Дизайн" />
+                <h3 class="white-title">Дизайнерские решения</h3>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
