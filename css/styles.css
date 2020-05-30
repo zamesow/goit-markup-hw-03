@@ -53,12 +53,14 @@ ul {
   font-size: 26px;
   line-height: 1.2;
 
-  margin: 24px 85px 25px 215px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 /*----------------------- ссылки навигации*/
 .nav {
   margin-right: auto;
+  margin-left: 85px;
 }
 .nav-ul {
   display: flex;
@@ -87,7 +89,7 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   /* ЗАМЕНИТЬ НА ФОН */
-  background-color: #212121;
+  background-color: var(--title-text-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -103,9 +105,8 @@ address {
 .button-prim.service {
   display: inline-block;
   padding: 10px 32px;
-  margin: 46px 223px 0;
+  margin-top: 46px;
   border-radius: 4px;
-  min-width: 201px;
 
   font-weight: 700;
   font-size: 16px;
@@ -119,8 +120,12 @@ address {
 /*----------------- преимущества, команда, фильтр */
 .section-item {
   font-size: 0px;
+  margin: 0px;
+}
+.section-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .section-img,
 .team,
 button {
@@ -128,10 +133,10 @@ button {
   font-family: inherit;
 }
 .section-img {
-  padding: 25px 102.34px;
+  width: 270px;
+  padding: 25px 102px;
   border-radius: 4px;
   margin: 0px;
-  width: 270px;
 }
 .section-img:hover {
   background-color: var(--accent-color);
@@ -162,13 +167,12 @@ button {
 }
 
 .section-list {
-  margin: 94px 215px;
+  margin-top: 94px;
 }
 .section-list-ul {
-  margin: 0px;
+  margin-bottom: 94px;
   padding: 0px;
   display: flex;
-  justify-content: space-between;
 }
 
 /*------------------- всё, что с цветом акцента */
@@ -201,10 +205,6 @@ body,
   letter-spacing: 0.03em;
 }
 
-.team-li {
-  width: 270px;
-}
-
 /*------------------ Белые заголовки */
 .footer-logo,
 .hero,
@@ -215,10 +215,17 @@ body,
 
 /*------------------------ Чем мы занимаемся? */
 .section-work {
+  margin-top: 94px;
+  margin-bottom: 94px;
+
+  border-top: 1px solid #ececec;
+}
+.section-ul {
   justify-content: center;
   padding-left: 0px;
   margin-top: 50px;
-  margin-bottom: 94px;
+  margin-bottom: 0;
+  font-size: 0;
   display: flex;
   text-align: center;
 }
@@ -228,8 +235,8 @@ body,
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 50px;
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 
 .work-li:not(:last-child) {
@@ -266,16 +273,28 @@ button {
 
 /*------------------------------------ Team */
 .team {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
+.team > .section-title {
+  margin-top: 0;
+}
+
 .team-ul {
   display: flex;
   justify-content: center;
   margin-top: 0px;
   padding-left: 0px;
+  font-size: 0;
 }
 .team-li:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-li {
+  width: 270px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .name {
@@ -317,8 +336,8 @@ button {
 .clients-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 94px;
   padding-left: 0px;
+  font-size: 0;
 }
 
 .clients-list > li:not(:last-child) {
@@ -347,10 +366,10 @@ button {
 .futer {
   background-color: #2f303a;
   letter-spacing: 0.03em;
-
+  margin-top: 94px;
+}
+.futer-div {
   display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
 }
 .footer-logo {
   font-size: 22px;
@@ -361,24 +380,20 @@ button {
 
 /*-------------------- адрес в футере */
 .div-adr {
-  margin: 48px 0px 28px 214px;
+  margin-top: 48px;
+  margin-bottom: 28px;
   text-align: left;
   display: flex;
   flex-direction: column;
   margin-right: 69px;
-  width: 231px;
 }
 
-.address,
-.copy {
+.address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  display: inline-block;
-}
-.address {
-  margin-bottom: 28px;
+  display: block;
 }
 
 .adr-link {
@@ -398,8 +413,8 @@ button {
 }
 
 .div-soc-link {
-  margin: 56px 94px 56px 0px;
-  padding: 0px;
+  margin-top: 56px;
+  margin-right: 94px;
 }
 .social-links.soc {
   margin-top: 21px;
@@ -408,9 +423,7 @@ button {
 
 /* --------------------------- Рассылка */
 .fly {
-  width: 570px;
-  margin: 56px 216px 50px 0px;
-  width: 570px;
+  margin-top: 56px;
   padding: 0px;
 }
 
@@ -422,10 +435,18 @@ button {
 
 /*------------------------------ Copyrights */
 .copy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  height: 61px;
   color: rgba(255, 255, 255, 0.4);
-  margin: 18px auto 21px;
-  width: 310px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  margin: 0;
   text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 0255, 0.1);
 }
 
 /* ------------------------------ buttons */
@@ -439,14 +460,10 @@ button {
 /* -------- PORTFOLIO ----------- */
 
 /* Filter */
-.filter {
-  padding: 93px 215px 94px;
-}
-
 .fil-but {
   text-align: center;
 }
-.filter-ul li {
+.filter-ul > li {
   font-size: 0px;
   text-align: left;
   margin-bottom: 30px;
@@ -467,7 +484,6 @@ button {
   text-align: center;
   display: inline-block;
   border-radius: 4px;
-  margin-bottom: 8px;
   padding: 6px 22px;
   border: 1px solid transparent;
 }
@@ -504,9 +520,12 @@ button:hover {
   margin-top: 50px;
   margin-bottom: 0px;
 }
-
 .filter-ul li:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+.filter-ul li:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .div-li {
