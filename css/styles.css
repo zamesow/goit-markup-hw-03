@@ -191,7 +191,6 @@ span,
 .fone:hover,
 .fone:focus,
 button:focus,
-.follow:not(:hover),
 .filter-ul > li:focus {
   color: var(--accent-color);
 }
@@ -424,13 +423,29 @@ button {
 /* --------------------------- Рассылка */
 .fly {
   margin-top: 56px;
+  margin-left: 12px;
+  margin-bottom: 21px;
   padding: 0px;
 }
-
+.div-fly {
+  display: flex;
+  align-items: center;
+}
 .fly p {
   margin-top: 0px;
-  margin-bottom: 21px;
+  margin-bottom: 50px;
   text-align: left;
+}
+
+.button-fly {
+  min-width: 109px;
+  height: 50px;
+  padding: 9px 28px;
+  display: flex;
+  align-self: stretch;
+}
+.button-fly > img {
+  margin-left: 10px;
 }
 
 /*------------------------------ Copyrights */
@@ -451,7 +466,8 @@ button {
 
 /* ------------------------------ buttons */
 .button-prim,
-.button-sec .follow {
+.button-sec,
+.button-fly {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
