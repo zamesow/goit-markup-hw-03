@@ -76,7 +76,6 @@ address {
 .mail,
 .fone {
   color: var(--primary-text-color);
-  text-decoration: normal;
   margin-left: 10px;
   font-style: normal;
 }
@@ -408,7 +407,7 @@ button {
   text-transform: uppercase;
   text-align: left;
   padding: 0px;
-  margin-bottom: 21;
+  margin-bottom: 21px;
 }
 
 .div-soc-link {
