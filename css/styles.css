@@ -386,6 +386,7 @@ button {
   display: flex;
   flex-direction: column;
   margin-right: 69px;
+  width: 231px;
 }
 
 .address {
@@ -430,6 +431,7 @@ button {
 .div-fly {
   width: 570px;
   display: flex;
+  justify-content: space-between;
 }
 .fly p {
   text-align: left;
