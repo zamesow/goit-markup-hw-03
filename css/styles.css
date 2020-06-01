@@ -24,7 +24,7 @@ a {
 }
 
 /*------------------- всё, что с цветом акцента */
-.current,
+.nav-li > .current,
 span,
 .nav a:hover,
 .nav a:focus,
@@ -336,36 +336,19 @@ button {
   border-radius: 4px;
   width: 170px;
   height: 90px;
+  padding: 19px 41px;
 }
 .clients-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-left: 0px;
   font-size: 0;
 }
 
 .clients-list > li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: ;
 }
 
-.one {
-  padding: 20px 63px;
-}
-.two {
-  padding: 19px 65px;
-}
-.three {
-  padding: 24px 64px;
-}
-.four {
-  padding: 24px 45px;
-}
-.five {
-  padding: 22px 55px;
-}
-.six {
-  padding: 22px 41px;
-}
 /* -------------------------- Футер */
 .footer {
   background-color: #2f303a;
@@ -399,12 +382,16 @@ button {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  display: block;
+   display: flex;
+  flex-direction: column;
 }
 
 .adr-link {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
+
+}
+.email {
+    margin-top: 9px;
   margin-bottom: 9px;
 }
 
@@ -447,10 +434,13 @@ button {
   height: 50px;
   padding: 9px 28px;
   display: flex;
-  align-self: stretch;
+  align-items: center;
 }
 .button-fly > img {
   margin-left: 10px;
+}
+.button-fly:focus {
+  color: var(--primary-white-color);
 }
 
 /*------------------------------ Copyrights */
