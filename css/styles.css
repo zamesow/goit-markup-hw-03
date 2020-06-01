@@ -411,7 +411,7 @@ button {
   padding: 0px;
   margin-bottom: 21px;
 }
-
+/* ----------------------- Присоединяйтесь */
 .div-soc-link {
   margin-top: 56px;
   margin-right: 94px;
@@ -424,18 +424,17 @@ button {
 /* --------------------------- Рассылка */
 .fly {
   margin-top: 56px;
-  margin-left: 12px;
-  margin-bottom: 21px;
+  margin-bottom: 50px;
   padding: 0px;
 }
 .div-fly {
+  width: 570px;
   display: flex;
-  align-items: center;
 }
 .fly p {
-  margin-top: 0px;
-  margin-bottom: 50px;
   text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .button-fly {
